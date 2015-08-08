@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="col-md-10">
+        <p><input type="text" id="image_url" size="100"></p>
+        <ul>
+            <li onclick="setInput('https://farm1.staticflickr.com/463/19167706484_692e3ed122_k_d.jpg')">family1</li>
+            <li onclick="setInput('https://farm4.staticflickr.com/3793/19783051972_d1ea0a2d5b_k_d.jpg')">family2</li>
+
+            <li onclick="setInput('/static/images/bv1.jpg')">/static/images/bv1.jpg</li>
+            <li onclick="setInput('/static/images/bv2.jpg')">/static/images/bv2.jpg</li>
+            <li onclick="setInput('/static/images/bv3.jpg')">/static/images/bv3.jpg</li>
+            <li onclick="setInput('/static/images/bv4.jpg')">/static/images/bv4.jpg</li>
+            <li> <a href="/static/images/www.123apply.com_best-credit-cards.shtml_1.png">before</a> <a href="/static/images/www.123apply.com_0.jpg">after</a></li>
+        </ul>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Original</th>
+                <th>Result</th>
+                <th>Face Detected</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="" id="random1_url" data-lightbox="image-1"><img id="random1" src="" width="440px"></a></td>
+                <td><a href="" id="random_result_url" data-lightbox="image-2"><img id="random_result" src=""
+                                                                                   width="440px"></a></td>
+                <td><span id="result_msg"></span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
